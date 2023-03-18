@@ -1,4 +1,4 @@
-# Code_KY_SD2_Final
+# OrderlyCLI
 Order management system for multiple fulfillment centers. Python's [Faker](https://faker.readthedocs.io/en/master/) was used to generate data within 'input.csv'. 
 
 ## Project Objective
