@@ -1,0 +1,3 @@
+Id,FulfillmentType,ShippingMethod,CustomerName,Product,Quantity
+1,Location1,Standard,John Doe,ProductA,2
+3,Location1,Standard,Mark Johnson,ProductC,3
