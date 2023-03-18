@@ -13,6 +13,12 @@ namespace Code_KY_SD2_Final
     {
         static void Main(string[] args)
         {
+
+
+            // Set the console window size to fill the screen
+            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            Console.SetBufferSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
@@ -20,7 +26,7 @@ namespace Code_KY_SD2_Final
                 .WriteTo.Console()
                 .CreateLogger();
 
-            string inputCsvFile = "C:\\tmp\\csharp\\Code_KY_SD2_Final\\Code_KY_SD2_Final\\input.csv";
+            string inputCsvFile = "input.csv";
             string outputCsvFile1 = "output1.csv";
             string outputCsvFile2 = "output2.csv";
 
@@ -28,6 +34,7 @@ namespace Code_KY_SD2_Final
 
             while (true)
             {
+                Console.WriteLine("Welcome to the Order Management System");
                 Console.WriteLine("Please choose an option:");
                 Console.WriteLine("1. View all orders");
                 Console.WriteLine("2. Process and split orders");
@@ -96,7 +103,7 @@ namespace Code_KY_SD2_Final
                 table.AddRow(order.OrderId, order.CustomerName, order.Email, order.Phone, order.Address, order.Size, order.Color, order.Style, order.TvShow, order.Quantity, order.Price.ToString("F2"), order.FulfillmentType);
             }
 
-            table.Write(Format.Minimal);
+            table.Write(Format.Alternative);
         }
     }
 }
