@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Code_KY_SD2_Final
 {
+    
     public class OrderProcessor<T> where T : Order
     {
         private readonly string _inputCsvFile;
@@ -23,6 +24,15 @@ namespace Code_KY_SD2_Final
             _outputCsvFile2 = outputCsvFile2;
             _splitCondition = splitCondition;
         }
+        public List<T> ReadOrders(string inputFile)
+        {
+            using (var reader = new StreamReader(inputFile))
+            using (var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {
+                return csvReader.GetRecords<T>().ToList();
+            }
+        }
+
 
         public void Process()
         {
