@@ -50,7 +50,7 @@ namespace Code_KY_SD2_Final
 
         public void Process()
         {
-            using (var reader = new StreamReader(_inputCsvFile))
+            using (var reader = new StreamReader(InputCsvFile))
             using (var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
                 var orders = csvReader.GetRecords<T>().ToList();
@@ -61,6 +61,7 @@ namespace Code_KY_SD2_Final
                 WriteOrders(OutputCsvFile2, ordersToOutput2);
             }
         }
+
 
 
         private void WriteOrders(string outputFile, List<T> orders)
