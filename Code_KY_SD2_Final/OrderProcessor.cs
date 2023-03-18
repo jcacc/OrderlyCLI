@@ -17,13 +17,27 @@ namespace Code_KY_SD2_Final
         private readonly string _outputCsvFile2;
         private readonly Func<T, bool> _splitCondition;
 
-        public OrderProcessor(string inputCsvFile, string outputCsvFile1, string outputCsvFile2, Func<T, bool> splitCondition)
+        public string InputCsvFile { get; }
+        public string OutputCsvFile1 { get; }
+        public string OutputCsvFile2 { get; }
+
+        public OrderProcessor(string inputCsvFile, string outputCsvFile1, string outputCsvFile2, Func<T, bool> splitCondition = null)
         {
-            _inputCsvFile = inputCsvFile;
-            _outputCsvFile1 = outputCsvFile1;
-            _outputCsvFile2 = outputCsvFile2;
+            InputCsvFile = inputCsvFile;
+            OutputCsvFile1 = outputCsvFile1;
+            OutputCsvFile2 = outputCsvFile2;
             _splitCondition = splitCondition;
         }
+
+
+
+
+        public OrderProcessor(string inputCsvFile, string outputCsvFile1, string outputCsvFile2)
+            : this(inputCsvFile, outputCsvFile1, outputCsvFile2, null)
+        {
+        }
+
+
         public List<T> ReadOrders(string inputFile)
         {
             using (var reader = new StreamReader(inputFile))
@@ -43,10 +57,11 @@ namespace Code_KY_SD2_Final
                 var ordersToOutput1 = orders.Where(_splitCondition).ToList();
                 var ordersToOutput2 = orders.Except(ordersToOutput1).ToList();
 
-                WriteOrders(_outputCsvFile1, ordersToOutput1);
-                WriteOrders(_outputCsvFile2, ordersToOutput2);
+                WriteOrders(OutputCsvFile1, ordersToOutput1);
+                WriteOrders(OutputCsvFile2, ordersToOutput2);
             }
         }
+
 
         private void WriteOrders(string outputFile, List<T> orders)
         {
