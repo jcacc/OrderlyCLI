@@ -15,9 +15,8 @@ namespace Code_KY_SD2_Final
         {
 
 
-            // Set the console window size to fill the screen
-            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
-            Console.SetBufferSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            Console.Title = "OrderlyCLI";
+
 
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
@@ -34,7 +33,7 @@ namespace Code_KY_SD2_Final
 
             while (true)
             {
-                Console.WriteLine("Welcome to the Order Management System");
+                Console.WriteLine("Welcome to OrderlyCLI");
                 Console.WriteLine("Please choose an option:");
                 Console.WriteLine("1. View all orders");
                 Console.WriteLine("2. Process and split orders");
