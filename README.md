@@ -1,5 +1,5 @@
 # Code_KY_SD2_Final
-Order management system for multiple fulfillment centers
+Order management system for multiple fulfillment centers. The Faker module with Python was used to generate fake data. There are no PII in these data. 
 
 ## Project Objective:
 An order management system that will split an order to be fulfilled from two separate locations
