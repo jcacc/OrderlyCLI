@@ -1,4 +1,101 @@
-Id,FulfillmentType,ShippingMethod,CustomerName,Product,Quantity
-1,Location1,Standard,John Doe,ProductA,2
-2,Location2,Express,Jane Smith,ProductB,1
-3,Location1,Standard,Mark Johnson,ProductC,3
+order_id,customer_name,email,phone,address,size,color,style,tv_show,quantity,price,fulfillment_type
+1,Mrs. Cathy Gonzales,melissariggs@example.com,7221105237,"892 Vaughn Shoals, North Tasha, IN 02444",XXL,Red,Crewneck,Breaking Bad,4,44.05,shipping
+2,Nicole Ortega,jonathonmoore@example.net,001-633-425-9616x59424,"2872 Mark Passage, South Russellstad, MI 07814",XXL,Green,Long Sleeve,Stranger Things,2,36.91,shipping
+3,Wanda Rodriguez,richardberg@example.net,+1-553-417-6404x06079,"9435 Thompson Hill Suite 513, South Tylerbury, FM 82389",XL,Green,Crewneck,The Office,2,47.12,shipping
+4,Sarah Mcdaniel,jerrybell@example.com,2106526090,"81491 Peter Mountains Apt. 249, Petersonfort, VI 11119",XXL,Black,Hoodie,Friends,5,38.70,shipping
+5,Patricia Hale,ghunt@example.com,1495448297,"11083 Ashley Summit, Rogersview, AS 18591",S,Red,Crewneck,Stranger Things,4,36.18,shipping
+6,Jason Ryan,martinezjonathan@example.net,856.608.5919,"30569 Carey Turnpike Suite 820, Aliciashire, WV 98120",XL,Blue,V-Neck,Breaking Bad,5,48.56,shipping
+7,Christopher Neal,moralesmatthew@example.net,0397085152,"64165 William Pines Apt. 898, New Keith, AR 09922",XL,Blue,Crewneck,The Office,5,24.33,pickup
+8,Karen Reed,miguel98@example.net,902.365.2260,"7963 Stephanie Way Suite 609, West Belinda, CT 76367",XXL,Yellow,V-Neck,Stranger Things,5,48.78,pickup
+9,Ricardo Francis,amanda26@example.org,123-399-0781x189,"311 Torres Walks Suite 650, West Richardtown, MN 21132",XXL,Black,Hoodie,Breaking Bad,3,37.61,pickup
+10,Benjamin Carter,olang@example.net,(567)192-0525x44014,"38693 Jennifer Ramp, Rodriguezville, NH 30171",XL,Red,Long Sleeve,Friends,4,43.94,pickup
+11,Brittany Burnett,ahall@example.com,001-731-933-4570,"17370 Hernandez Road Apt. 028, New Eric, IA 41448",XL,White,V-Neck,Stranger Things,5,34.95,pickup
+12,Victoria Anderson,padkins@example.net,856-641-9092,"PSC 9271, Box 9061, APO AA 29720",XXL,Gray,V-Neck,Stranger Things,2,38.42,pickup
+13,Valerie Walsh,nicolecunningham@example.org,688-761-8939,"50652 Jason Mission Apt. 199, East Joy, SC 20639",XXL,Gray,Crewneck,Breaking Bad,2,25.52,pickup
+14,Cory Green,christopher60@example.com,(480)483-0959,"2747 Jason Springs Suite 819, Port Rachelburgh, KY 81077",XL,White,Hoodie,Friends,2,16.71,shipping
+15,Diana Garcia,christine14@example.org,(702)733-3729,"PSC 4322, Box 6482, APO AP 12328",S,Green,Crewneck,Friends,5,16.24,pickup
+16,David Torres,trevinostacey@example.org,(453)990-7392,"051 Sara Spring Apt. 091, New Tylerborough, MN 13499",S,Gray,Crewneck,Game of Thrones,1,15.51,pickup
+17,Patricia Williams,curtis11@example.com,896.081.8601x50559,"492 John Flats, Nicholasburgh, DE 73980",L,Red,Round Neck,Stranger Things,3,30.70,shipping
+18,Kirk Sutton,arthurperez@example.org,+1-405-740-9233x76026,"4794 Renee Trail Suite 600, Yvonnechester, VA 86658",XXL,Black,Long Sleeve,Stranger Things,3,43.59,shipping
+19,Joseph Richardson,kenneth81@example.org,001-752-824-5485x8684,"7513 Lisa Plaza Suite 922, Jeremiahstad, MI 49478",XL,Gray,Hoodie,Game of Thrones,4,22.83,pickup
+20,Bradley West,kpalmer@example.com,001-138-684-3287x00479,"29688 Robert Trail Apt. 395, Kimborough, MH 11144",XXL,Gray,Round Neck,Game of Thrones,3,43.33,pickup
+21,Andrew Gutierrez,jacquelinepalmer@example.org,+1-379-194-6406x5137,"USS Clark, FPO AE 85057",S,Blue,Crewneck,Stranger Things,3,30.41,shipping
+22,Patricia Coleman,snyderlaura@example.com,381-220-9865,"24651 Heather Rapids Apt. 339, Jameston, ME 79315",L,Red,V-Neck,The Office,3,32.23,pickup
+23,James Villanueva,ashley96@example.com,801-675-3338x512,"466 Hughes Fall, Port Robert, KY 72899",XL,Red,Round Neck,Stranger Things,1,38.64,pickup
+24,James Klein,julia36@example.org,(655)632-0682x3685,"USNS Gallagher, FPO AP 94213",M,Blue,Long Sleeve,Stranger Things,3,18.19,pickup
+25,Cynthia Carey,ehoffman@example.com,882.638.7119x8124,"249 Lozano Orchard, Ginamouth, CA 26218",M,Green,Long Sleeve,The Office,1,17.98,shipping
+26,Renee Spencer,xnichols@example.com,001-449-894-9661,"670 Brian Plain, East Matthew, OR 22806",M,Gray,Hoodie,The Office,1,33.68,shipping
+27,Jamie Peterson,grossjuan@example.com,(084)417-8375x6092,"9224 Warner Court Suite 021, West Maryland, ME 21842",XXL,Gray,Round Neck,The Office,4,49.53,pickup
+28,Angel Weaver,ksanchez@example.net,533-223-9464x42783,"778 Alexa Glens, Mariahmouth, MA 38471",XXL,Red,V-Neck,Breaking Bad,3,22.73,shipping
+29,Olivia Torres,romanbrandon@example.net,307-034-9956x16224,"24568 Baker Alley, West Samanthaville, IN 20749",XL,Red,Hoodie,Breaking Bad,4,23.08,pickup
+30,Timothy Foster,nmatthews@example.net,+1-851-302-0323x229,"USCGC Caldwell, FPO AE 86702",XXL,Black,V-Neck,Game of Thrones,1,26.28,pickup
+31,Sean Jennings,powerschristine@example.net,+1-377-786-8889x25349,"USNV Mclean, FPO AA 07049",XL,White,Hoodie,Breaking Bad,4,16.20,shipping
+32,Thomas Young,thomasrichard@example.net,885.919.6793,"02069 Baker Mission, New Christopherview, ID 92628",M,Yellow,V-Neck,Game of Thrones,5,49.55,pickup
+33,Erika Wong DDS,stevenscourtney@example.org,228-097-8354x25476,"307 Beard Squares Apt. 103, Josephhaven, AK 82656",S,Gray,Hoodie,Stranger Things,5,41.07,pickup
+34,Antonio Wright,brownvincent@example.org,001-971-348-6751,"8317 Brian Forges Apt. 030, South Tom, RI 61956",XXL,Gray,Crewneck,Stranger Things,1,43.79,shipping
+35,David Gonzalez,agibson@example.com,302.419.3833,"4377 Quinn Falls Apt. 075, South Lisa, NH 32861",XXL,White,Crewneck,Game of Thrones,3,29.91,pickup
+36,Shelly Cole,acook@example.com,(125)627-2078x410,"143 Mercado Parkways, West Paulaside, NV 36805",L,Gray,Hoodie,Game of Thrones,3,22.11,shipping
+37,Veronica Clarke MD,michelle46@example.net,822-713-5606,"1865 Santos Isle Apt. 914, Brettview, MN 28681",XL,Green,Long Sleeve,Friends,1,45.44,pickup
+38,Grace Stewart,tony95@example.net,001-450-326-9827,"1901 Smith Mount, South Christina, AK 68425",XXL,White,Round Neck,Game of Thrones,1,34.20,shipping
+39,Patrick Diaz,snyderray@example.com,+1-605-093-7779,"95343 Ferguson Square Apt. 310, New Kellyborough, CT 00823",XXL,Yellow,Long Sleeve,The Office,4,22.73,shipping
+40,Julie Bradford,heatherhill@example.com,8598070496,"389 Julie Circle Apt. 161, Angelaburgh, WA 74446",M,Black,Crewneck,Stranger Things,2,44.64,shipping
+41,Taylor Rojas,qmiles@example.org,+1-471-732-1317,"8662 James Radial, Port David, NV 94461",L,Gray,Hoodie,Breaking Bad,1,48.18,shipping
+42,Zachary Taylor,kramerangelica@example.net,083.180.9464x53295,"6510 Chavez Lights, Dennishaven, PR 23434",L,Black,Long Sleeve,Game of Thrones,1,49.18,shipping
+43,Karen Brown,fadams@example.org,294-270-6848,"132 Obrien Garden Apt. 276, West Matthew, AR 82460",XXL,Yellow,Round Neck,Game of Thrones,1,15.38,shipping
+44,Jessica Brown,blake36@example.net,374-098-6981,"245 Gary Flat Suite 273, West Craigborough, KY 03376",M,Red,Long Sleeve,Stranger Things,2,39.09,pickup
+45,Gina White,foleybruce@example.org,686-288-4047,"848 Patrick Row Suite 864, Rogersfurt, AL 62462",M,Black,Hoodie,The Office,2,43.19,shipping
+46,Mark Rivera,mleach@example.com,(828)073-6215x5761,"888 Schroeder Rest Apt. 092, Bruceview, FM 10561",XL,White,Round Neck,Friends,2,35.38,shipping
+47,Kyle Peters,crobles@example.net,682.100.5843x3839,"90658 Beard Mission, West Lynnside, IL 95006",XXL,Gray,Round Neck,Game of Thrones,4,34.06,shipping
+48,Jesse Dixon,paul54@example.net,408.805.6003x83805,"195 Amanda Cliff Suite 253, Mitchellborough, NC 72437",M,Black,Crewneck,Game of Thrones,2,48.75,pickup
+49,David Cunningham,johnhampton@example.org,(483)345-6040x5921,"7806 Nichols Roads Suite 412, Derekview, PA 76278",L,Yellow,V-Neck,Game of Thrones,3,42.34,shipping
+50,Brian Smith,tuckerjames@example.org,+1-102-515-7272x99739,"72998 Dorothy Highway, Laurenside, VI 93878",S,Gray,Hoodie,Game of Thrones,2,25.72,pickup
+51,Janet Robinson,ruth90@example.com,+1-491-011-0845x54589,"906 Robert Canyon Apt. 250, North Samantha, MO 53888",S,Gray,Hoodie,Game of Thrones,1,40.25,shipping
+52,Spencer Morris,losborne@example.net,(968)618-7544x16289,"9840 Brittany Circle Suite 168, Lisashire, MD 48673",S,Black,Round Neck,The Office,1,36.57,shipping
+53,Charles Pierce,kelseychandler@example.net,492.191.6652x015,"052 Crawford Passage, Diazbury, VT 59895",S,Yellow,Crewneck,Game of Thrones,2,32.47,shipping
+54,Andrea Cook DDS,coltonhanna@example.org,(507)458-5091x685,"02517 Lowery Isle, Smithside, WA 41904",XL,Green,Crewneck,Game of Thrones,3,27.35,pickup
+55,Rachael Moore,gregoryball@example.com,(142)950-6736x006,"09439 Angela Streets Suite 563, East Jessica, MO 16334",XXL,White,Crewneck,Breaking Bad,1,27.49,pickup
+56,Stephen Taylor,kayla95@example.net,415-769-7836x69571,"333 Mark Shoals Apt. 225, North David, SD 90447",M,Black,Hoodie,Game of Thrones,2,41.25,shipping
+57,Christopher Harrison,npierce@example.org,001-795-014-5931x5423,"8612 Michael Corners, East Kevinport, MS 57434",XXL,Gray,V-Neck,Breaking Bad,3,42.89,shipping
+58,Leslie Lopez,rebeccahernandez@example.com,470.313.9884x93867,"546 Trevino Meadows, North Debra, NJ 33345",XL,Black,Hoodie,Breaking Bad,5,32.03,shipping
+59,Samuel Nguyen,melissawoods@example.com,001-062-602-2937x005,"740 Barbara Coves Suite 684, Lake Marktown, WY 90436",M,Red,Long Sleeve,The Office,3,34.75,shipping
+60,Jennifer Daniels,kayla59@example.com,412-725-0972x406,"776 Jeffrey Islands, South Natalieside, IN 27422",XL,Gray,Round Neck,Stranger Things,3,15.91,pickup
+61,Diana Adams,fwalker@example.net,001-789-953-6498x5745,"908 Julie Place Apt. 810, New Matthew, ME 33624",XL,Red,Round Neck,Breaking Bad,1,17.36,shipping
+62,Melissa Chavez,tiffany83@example.net,846-103-4257x1693,"245 Mendoza Shore, Port Kristen, MP 37219",S,Black,V-Neck,Friends,3,44.69,pickup
+63,Nancy Friedman,matthew75@example.org,001-973-367-1518,"311 Teresa Spring, Cynthiashire, PR 37358",XL,Gray,Crewneck,Stranger Things,5,43.72,shipping
+64,Gary Rodriguez,robinsonalexander@example.net,418.929.0650,"Unit 5031 Box 5385, DPO AP 83663",M,White,Round Neck,The Office,4,30.41,shipping
+65,Lisa Jones,handerson@example.org,+1-652-679-1952x38430,"064 Catherine Crescent, New Teresa, ND 64974",S,Blue,Crewneck,Stranger Things,5,47.48,pickup
+66,Sandra Escobar,serranochristine@example.org,+1-494-680-6030x9825,"255 Strickland Bypass, South Jonathan, IA 86206",XL,Gray,Round Neck,Stranger Things,4,22.27,shipping
+67,Joseph Miller,debbiewilliams@example.net,965.879.5488x10114,"47268 Kathy Cape, Johnstonton, DE 35896",S,Yellow,Hoodie,Breaking Bad,3,31.50,shipping
+68,Summer Underwood,kaylaknapp@example.org,758.352.6833,"66253 Jensen Lane, Katherineborough, MA 70207",M,Yellow,V-Neck,Breaking Bad,1,31.57,pickup
+69,Caitlin Simmons,lesliesanders@example.com,001-119-284-7214x95807,"3809 Murray Passage, Chloestad, MA 21759",XXL,Gray,Long Sleeve,Friends,2,35.29,pickup
+70,Adam Reed,mcdonaldjorge@example.com,993-397-5290x8956,"653 Katie Forks Apt. 103, East Jeffreyhaven, AZ 78457",L,Blue,Long Sleeve,Game of Thrones,2,30.53,shipping
+71,Susan Keller,scottmisty@example.org,7688664927,"317 Mccarty Locks Suite 892, Jacksonmouth, ID 86453",L,Blue,Crewneck,Stranger Things,5,19.14,shipping
+72,Rachael Christian,michael64@example.com,+1-221-001-6312,"096 Graham Bridge Apt. 114, Savageland, NY 67320",XXL,Gray,Round Neck,The Office,5,47.20,pickup
+73,Alicia Campbell,jimortiz@example.net,(022)067-1409,"USCGC Todd, FPO AA 84163",XXL,Blue,Long Sleeve,Game of Thrones,3,25.41,pickup
+74,Alicia Chung,brandybuck@example.org,589-882-8056x5026,"7853 Gonzales Highway Apt. 730, Port Zacharychester, KY 11899",M,Red,Hoodie,Friends,2,40.82,pickup
+75,Mr. Carlos Johnson,orice@example.org,+1-110-643-1445x20865,"76940 Meyers Flat Apt. 993, North Jackie, IN 65013",XXL,Black,Long Sleeve,Breaking Bad,2,22.02,shipping
+76,Anthony Gallegos,silvadaniel@example.org,(103)559-4360x5097,"60422 Julie Ridge Suite 543, North Chris, NY 35809",XL,Blue,V-Neck,Breaking Bad,4,22.38,pickup
+77,Daniel Ross,oscar46@example.net,2557355400,"030 Jillian Extensions, Johnsonland, GA 90637",S,Red,V-Neck,The Office,1,32.87,shipping
+78,Brenda James,ernestallen@example.com,799.803.3237,"34183 William Via Suite 305, Haileymouth, NH 47743",S,Yellow,Crewneck,Friends,1,30.15,pickup
+79,Richard Morton,alexfranklin@example.org,(663)526-4334x6529,"032 Lewis Cape Suite 274, Perryport, AK 55402",XL,White,Long Sleeve,Game of Thrones,5,40.69,shipping
+80,Sophia Hughes,hwalker@example.net,061.230.7211,"1836 Oliver Loop, West Melissa, MI 25183",XL,Blue,Long Sleeve,Breaking Bad,2,47.46,shipping
+81,Arthur Berry,ddyer@example.net,730.649.8476x511,"7202 Lisa Plain Apt. 978, East Karenmouth, RI 22437",L,Green,Round Neck,Game of Thrones,1,33.53,pickup
+82,Vincent Brooks,vphillips@example.com,913-053-5173,"Unit 6614 Box 2443, DPO AA 98204",XL,Yellow,Crewneck,The Office,4,21.99,pickup
+83,Courtney Spears,willismichael@example.com,(932)242-0211x59104,"208 Williams Via, Davidfurt, AR 86141",XXL,Green,Crewneck,Breaking Bad,3,25.08,pickup
+84,Christopher Miller,brent26@example.com,+1-400-925-6304x581,"5703 Erica Run, Lake Brittany, IN 73528",XXL,Red,Hoodie,The Office,4,18.02,pickup
+85,Heather Parker,kim03@example.com,+1-627-163-6164x29583,"59898 Lisa Isle, Susanchester, NV 43341",S,Blue,Crewneck,Game of Thrones,1,22.62,pickup
+86,Christopher Barry,shenry@example.net,167-745-5077x8728,"5115 Hansen Wells, East Zacharyton, SC 20813",XXL,Red,V-Neck,Breaking Bad,1,26.71,pickup
+87,Joseph Lawson,tsalazar@example.com,(558)975-1930,"09931 Smith Circle Suite 227, Robertburgh, CA 74907",S,Yellow,Crewneck,Breaking Bad,3,36.47,shipping
+88,Mariah Smith,cynthia11@example.org,+1-574-887-5470x161,"8102 Victor Bridge, Robinmouth, AS 07521",XL,White,Hoodie,The Office,4,41.06,shipping
+89,Robert Patel,fsutton@example.net,001-787-753-2002,"868 Benjamin Village, Smithtown, DC 79380",M,Green,V-Neck,Stranger Things,4,43.18,pickup
+90,Rhonda Martinez,connor98@example.org,(879)856-8999x2823,"Unit 2999 Box 6305, DPO AE 87812",XXL,Green,Crewneck,Breaking Bad,3,42.77,pickup
+91,Allison Moore,whitestephanie@example.org,327.126.6876x333,"632 Ryan Shore Suite 374, Barbaraton, NM 16971",L,Blue,Hoodie,The Office,3,40.64,pickup
+92,Laura Powell,hannah40@example.org,441.339.1990,"9881 Russo Port, Rhodesland, NC 27439",M,Yellow,Hoodie,Breaking Bad,5,26.08,pickup
+93,Antonio Weaver,hsmith@example.org,001-971-770-2260x09730,"8780 John Station Suite 262, Aguilarhaven, GU 09663",S,Green,Crewneck,Stranger Things,4,21.41,shipping
+94,Donald Lang,haynesvanessa@example.com,001-899-889-7855,"396 Crosby Lodge, West Steven, AZ 94325",XL,Black,V-Neck,The Office,3,23.71,shipping
+95,Danny Sanford,michael98@example.com,080-171-8941,"6731 Brittany Well Apt. 258, Millerville, IN 88826",M,Red,Hoodie,Game of Thrones,3,29.20,pickup
+96,Erica Hernandez,jason29@example.org,+1-711-685-7948x081,"06768 Walker Parkways, Lindashire, PW 03073",XL,Green,V-Neck,Friends,1,39.03,pickup
+97,Lori Phillips,herreraangelica@example.net,001-160-382-1156x970,"1263 Jill Park, Williamborough, WA 43222",S,Green,Long Sleeve,Friends,3,37.67,shipping
+98,Dakota Day,perezmelissa@example.net,139.603.3438x970,"05188 Joseph Pines Suite 321, West Samanthaberg, CA 87709",XL,White,Hoodie,Game of Thrones,4,41.95,pickup
+99,Carl Rivera,megancopeland@example.net,332.186.1355x44079,"734 Kevin Plaza, Port Christinechester, NM 80595",L,Red,V-Neck,Breaking Bad,5,48.44,shipping
+100,Veronica Fisher,erinhughes@example.net,1530363560,"1212 Schwartz Dam, Port Debbieberg, NV 90816",M,Yellow,Round Neck,Game of Thrones,4,23.85,shipping
