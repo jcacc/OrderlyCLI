@@ -56,7 +56,7 @@ namespace Code_KY_SD2_Final
 
                         case "2":
                             Log.Information("Processing and splitting orders");
-                            processor.Process(); 
+                            processor.Process();
                             Log.Information("Orders processed and saved to {OutputCsvFile1} and {OutputCsvFile2}", outputCsvFile1, outputCsvFile2);
                             break;
 
@@ -99,10 +99,11 @@ namespace Code_KY_SD2_Final
 
             foreach (var order in orders)
             {
-                table.AddRow(order.OrderId, order.CustomerName, order.Email, order.Phone, order.Address, order.Size, order.Color, order.Style, order.TvShow, order.Quantity, order.Price.ToString("F2"), order.FulfillmentType);
+                string phone = order.CleanPhoneNumber(); // Clean up phone number formatting
+                table.AddRow(order.OrderId, order.CustomerName, order.Email, phone, order.Address, order.Size, order.Color, order.Style, order.TvShow, order.Quantity, order.Price.ToString("F2"), order.FulfillmentType);
             }
 
             table.Write(Format.Alternative);
         }
     }
-}
+    }
