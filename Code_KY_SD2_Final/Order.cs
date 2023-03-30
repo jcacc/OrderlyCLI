@@ -12,22 +12,23 @@ namespace Code_KY_SD2_Final
 {
     public class Order
     {
-        public int OrderId { get; set; }
-        public string CustomerName { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public string Address { get; set; }
-        public string Size { get; set; }
-        public string Color { get; set; }
-        public string Style { get; set; }
-        public string TvShow { get; set; }
-        public int Quantity { get; set; }
-        public decimal Price { get; set; }
-        public string FulfillmentType { get; set; }
+        public int order_id { get; set; }
+        public string customer_name { get; set; }
+        public string email { get; set; }
+        public string phone { get; set; }
+        public string address { get; set; }
+        public string size { get; set; }
+        public string color { get; set; }
+        public string style { get; set; }
+        public string tv_show { get; set; }
+        public int quantity { get; set; }
+        public decimal price { get; set; }
+        public string fulfillment_type { get; set; }
+    
 
-        public string CleanPhoneNumber()
+    public string CleanPhoneNumber()
         {
-            string digitsOnly = Regex.Replace(Phone, "[^0-9]", "");
+            string digitsOnly = Regex.Replace(phone, "[^0-9]", "");
             string formatted = Regex.Replace(digitsOnly, @"(\d{3})(\d{3})(\d{4})", "($1) $2-$3");
             return formatted;
         }

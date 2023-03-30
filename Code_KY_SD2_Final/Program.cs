@@ -29,7 +29,7 @@ namespace Code_KY_SD2_Final
             string outputCsvFile1 = "output1.csv";
             string outputCsvFile2 = "output2.csv";
 
-            var processor = new OrderProcessor<Order>(inputCsvFile, outputCsvFile1, outputCsvFile2, o => o.FulfillmentType.ToLower() == "pickup");
+            var processor = new OrderProcessor<Order>(inputCsvFile, outputCsvFile1, outputCsvFile2, o => o.fulfillment_type.ToLower() == "pickup");
 
             while (true)
             {
@@ -100,7 +100,7 @@ namespace Code_KY_SD2_Final
             foreach (var order in orders)
             {
                 string phone = order.CleanPhoneNumber(); // Clean up phone number formatting
-                table.AddRow(order.OrderId, order.CustomerName, order.Email, phone, order.Address, order.Size, order.Color, order.Style, order.TvShow, order.Quantity, order.Price.ToString("F2"), order.FulfillmentType);
+                table.AddRow(order.order_id, order.customer_name, order.email, phone, order.address, order.size, order.color, order.style, order.tv_show, order.quantity, order.price.ToString("F2"), order.fulfillment_type);
             }
 
             table.Write(Format.Alternative);
