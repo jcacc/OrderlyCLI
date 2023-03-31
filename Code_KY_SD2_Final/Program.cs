@@ -99,11 +99,12 @@ namespace Code_KY_SD2_Final
 
             foreach (var order in orders)
             {
-                string phone = order.CleanPhoneNumber(); // Clean up phone number formatting
-                table.AddRow(order.order_id, order.customer_name, order.email, phone, order.address, order.size, order.color, order.style, order.tv_show, order.quantity, order.price.ToString("F2"), order.fulfillment_type);
+                string phoneNumber = order.CleanPhoneNumber(); // Clean up phone number formatting
+                table.AddRow(order.order_id, order.customer_name, order.email, phoneNumber, order.address, order.size, order.color, order.style, order.tv_show, order.quantity, order.price.ToString("F2"), order.fulfillment_type);
             }
 
             table.Write(Format.Alternative);
         }
+
     }
-    }
+}

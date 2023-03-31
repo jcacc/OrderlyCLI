@@ -47,13 +47,19 @@ namespace Code_KY_SD2_Final
             }
         }
 
-
         public void Process()
         {
             using (var reader = new StreamReader(InputCsvFile))
             using (var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
                 var orders = csvReader.GetRecords<T>().ToList();
+
+                // Format the phone numbers in each order.
+                foreach (var order in orders)
+                {
+                    order.phone = order.CleanPhoneNumber();
+                }
+
                 var ordersToOutput1 = orders.Where(_splitCondition).ToList();
                 var ordersToOutput2 = orders.Except(ordersToOutput1).ToList();
 
@@ -61,6 +67,22 @@ namespace Code_KY_SD2_Final
                 WriteOrders(OutputCsvFile2, ordersToOutput2);
             }
         }
+
+
+
+        //public void Process()
+        //{
+        //    using (var reader = new StreamReader(InputCsvFile))
+        //    using (var csvReader = new CsvReader(reader, CultureInfo.InvariantCulture))
+        //    {
+        //        var orders = csvReader.GetRecords<T>().ToList();
+        //        var ordersToOutput1 = orders.Where(_splitCondition).ToList();
+        //        var ordersToOutput2 = orders.Except(ordersToOutput1).ToList();
+
+        //        WriteOrders(OutputCsvFile1, ordersToOutput1);
+        //        WriteOrders(OutputCsvFile2, ordersToOutput2);
+        //    }
+        //}
 
 
 

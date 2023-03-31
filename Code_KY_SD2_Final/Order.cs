@@ -24,9 +24,26 @@ namespace Code_KY_SD2_Final
         public int quantity { get; set; }
         public decimal price { get; set; }
         public string fulfillment_type { get; set; }
-    
 
-    public string CleanPhoneNumber()
+        //public string FormatPhoneNumber()
+        //{
+        //    if (string.IsNullOrEmpty(phone))
+        //    {
+        //        return string.Empty;
+        //    }
+
+        //    var digitsOnly = new Regex(@"[^\d]");
+        //    var phoneNumber = digitsOnly.Replace(phone, "");
+
+        //    if (phoneNumber.Length != 10)
+        //    {
+        //        return phone;
+        //    }
+
+        //    return Regex.Replace(phoneNumber, @"(\d{3})(\d{3})(\d{4})", "($1) $2-$3");
+        //}
+
+        public string CleanPhoneNumber()
         {
             string digitsOnly = Regex.Replace(phone, "[^0-9]", "");
             string formatted = Regex.Replace(digitsOnly, @"(\d{3})(\d{3})(\d{4})", "($1) $2-$3");
