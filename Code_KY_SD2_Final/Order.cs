@@ -42,13 +42,38 @@ namespace Code_KY_SD2_Final
 
         //    return Regex.Replace(phoneNumber, @"(\d{3})(\d{3})(\d{4})", "($1) $2-$3");
         //}
-
         public string CleanPhoneNumber()
         {
+            // Extract the extension, if present
+            string extension = "";
+            int extensionIndex = phone.LastIndexOf("x");
+            if (extensionIndex != -1)
+            {
+                extension = phone.Substring(extensionIndex);
+                phone = phone.Substring(0, extensionIndex);
+            }
+
+            // Remove all non-digit characters from the phone number
             string digitsOnly = Regex.Replace(phone, "[^0-9]", "");
+
+            // Format the phone number
             string formatted = Regex.Replace(digitsOnly, @"(\d{3})(\d{3})(\d{4})", "($1) $2-$3");
+
+            // Add the extension back, if present
+            if (!string.IsNullOrEmpty(extension))
+            {
+                formatted += " " + extension;
+            }
+
             return formatted;
         }
+
+        //public string CleanPhoneNumber()
+        //{
+        //    string digitsOnly = Regex.Replace(phone, "[^0-9]", "");
+        //    string formatted = Regex.Replace(digitsOnly, @"(\d{3})(\d{3})(\d{4})", "($1) $2-$3");
+        //    return formatted;
+        //}
     }
 
 
